@@ -31,20 +31,11 @@ class ResultScreen extends StatelessWidget {
   Widget _displayChoice() {
     switch (choice) {
       case 'rock':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rock-paper-scissors_%28rock%29.png/1280px-Rock-paper-scissors_%28rock%29.png',
-          height: 100,
-        );
+        return Image.asset('images/rock.png', height: 100);
       case 'paper':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/1280px-Rock-paper-scissors_%28paper%29.png',
-          height: 100,
-        );
+        return Image.asset('images/paper.png', height: 100);
       case 'scissors':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/1280px-Rock-paper-scissors_%28scissors%29.png',
-          height: 100,
-        );
+        return Image.asset('images/scissors.png', height: 100);
       default:
         return const SizedBox.shrink();
     }
@@ -53,20 +44,11 @@ class ResultScreen extends StatelessWidget {
   Widget _displayComputerChoice() {
     switch (_computerChoice) {
       case 'rock':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rock-paper-scissors_%28rock%29.png/1280px-Rock-paper-scissors_%28rock%29.png',
-          height: 100,
-        );
+        return Image.asset('images/rock.png', height: 100);
       case 'paper':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/1280px-Rock-paper-scissors_%28paper%29.png',
-          height: 100,
-        );
+        return Image.asset('images/paper.png', height: 100);
       case 'scissors':
-        return Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/1280px-Rock-paper-scissors_%28scissors%29.png',
-          height: 100,
-        );
+        return Image.asset('images/scissors.png', height: 100);
       default:
         return const SizedBox.shrink();
     }

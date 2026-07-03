@@ -39,27 +39,18 @@ class GameScreen extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () => context.go('/result/rock'),
-                  icon: Image.network(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rock-paper-scissors_%28rock%29.png/1280px-Rock-paper-scissors_%28rock%29.png',
-                    height: 100,
-                  ),
+                  icon: Image.asset('images/rock.png', height: 100),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
                       onPressed: () => context.go('/result/paper'),
-                      icon: Image.network(
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/1280px-Rock-paper-scissors_%28paper%29.png',
-                        height: 100,
-                      ),
+                      icon: Image.asset('images/paper.png', height: 100),
                     ),
                     IconButton(
                       onPressed: () => context.go('/result/scissors'),
-                      icon: Image.network(
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/1280px-Rock-paper-scissors_%28scissors%29.png',
-                        height: 100,
-                      ),
+                      icon: Image.asset('images/scissors.png', height: 100),
                     ),
                   ],
                 ),
